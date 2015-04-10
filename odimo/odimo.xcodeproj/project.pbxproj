@@ -1,0 +1,760 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		CC186F37190F5E6600F671AC /* OSHomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CC186F36190F5E6600F671AC /* OSHomeViewController.m */; };
+		CC186F3A190F5EF200F671AC /* OSRecordViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CC186F39190F5EF200F671AC /* OSRecordViewController.m */; };
+		CC1FA960199A640900C3BC6D /* Recording.m in Sources */ = {isa = PBXBuildFile; fileRef = CC1FA95F199A640900C3BC6D /* Recording.m */; };
+		CC27AB5C19BB6D9C00EE353C /* Novocaine.m in Sources */ = {isa = PBXBuildFile; fileRef = CC27AB5A19BB6D9C00EE353C /* Novocaine.m */; };
+		CC2E8AC219AECC78000E9137 /* CoreAudio.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CC2E8AC119AECC78000E9137 /* CoreAudio.framework */; };
+		CC2E8AC419AECCEB000E9137 /* CoreFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CC2E8AC319AECCEB000E9137 /* CoreFoundation.framework */; };
+		CC3AE0E7199937F000BC2487 /* MessageUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CC3AE0E6199937F000BC2487 /* MessageUI.framework */; };
+		CC4201AC19F8A84200DB8CF5 /* Hand-White-Out.png in Resources */ = {isa = PBXBuildFile; fileRef = CC4201AB19F8A84200DB8CF5 /* Hand-White-Out.png */; };
+		CC4201AE19F8A85000DB8CF5 /* demoUpArrow.png in Resources */ = {isa = PBXBuildFile; fileRef = CC4201AD19F8A85000DB8CF5 /* demoUpArrow.png */; };
+		CC4201B019F8C4EE00DB8CF5 /* demoDoubleArrowHalf.png in Resources */ = {isa = PBXBuildFile; fileRef = CC4201AF19F8C4EE00DB8CF5 /* demoDoubleArrowHalf.png */; };
+		CC44FE891A3CA5F800DC5B62 /* OSThemeSettings.m in Sources */ = {isa = PBXBuildFile; fileRef = CC44FE881A3CA5F800DC5B62 /* OSThemeSettings.m */; };
+		CC478B651959FB1B0019D837 /* emptyArrayBackground.png in Resources */ = {isa = PBXBuildFile; fileRef = CC478B641959FB1B0019D837 /* emptyArrayBackground.png */; };
+		CC478B67195A61F10019D837 /* reelLight.png in Resources */ = {isa = PBXBuildFile; fileRef = CC478B66195A61F10019D837 /* reelLight.png */; };
+		CC5329111985D5CE00FEFC9D /* OSCreatePath.m in Sources */ = {isa = PBXBuildFile; fileRef = CC5329101985D5CE00FEFC9D /* OSCreatePath.m */; };
+		CC5329171985DD3800FEFC9D /* Model.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = CC5329151985DD3800FEFC9D /* Model.xcdatamodeld */; };
+		CC59AFB91A226CCB00AFFA78 /* odimio_Circle.png in Resources */ = {isa = PBXBuildFile; fileRef = CC59AFB81A226CCB00AFFA78 /* odimio_Circle.png */; };
+		CC6168B3195BB5F300A6A99B /* speakerPause.png in Resources */ = {isa = PBXBuildFile; fileRef = CC6168B2195BB5F300A6A99B /* speakerPause.png */; };
+		CC6168B5195BB70B00A6A99B /* speakerPlay.png in Resources */ = {isa = PBXBuildFile; fileRef = CC6168B4195BB70B00A6A99B /* speakerPlay.png */; };
+		CC6E3F1919300763003701BF /* DragIcon.png in Resources */ = {isa = PBXBuildFile; fileRef = CC6E3F1819300763003701BF /* DragIcon.png */; };
+		CC783C431958F71800B33F83 /* Raleway-Bold.otf in Resources */ = {isa = PBXBuildFile; fileRef = CC783C3A1958F57F00B33F83 /* Raleway-Bold.otf */; };
+		CC783C441958F71E00B33F83 /* Raleway-ExtraBold.otf in Resources */ = {isa = PBXBuildFile; fileRef = CC783C3B1958F57F00B33F83 /* Raleway-ExtraBold.otf */; };
+		CC783C451958F72700B33F83 /* Raleway-ExtraLight.otf in Resources */ = {isa = PBXBuildFile; fileRef = CC783C3C1958F57F00B33F83 /* Raleway-ExtraLight.otf */; };
+		CC783C461958F72700B33F83 /* Raleway-Heavy.otf in Resources */ = {isa = PBXBuildFile; fileRef = CC783C3D1958F57F00B33F83 /* Raleway-Heavy.otf */; };
+		CC783C471958F72700B33F83 /* Raleway-Light.otf in Resources */ = {isa = PBXBuildFile; fileRef = CC783C3E1958F57F00B33F83 /* Raleway-Light.otf */; };
+		CC783C481958F72700B33F83 /* Raleway-Medium.otf in Resources */ = {isa = PBXBuildFile; fileRef = CC783C3F1958F57F00B33F83 /* Raleway-Medium.otf */; };
+		CC783C491958F72700B33F83 /* Raleway-Regular.otf in Resources */ = {isa = PBXBuildFile; fileRef = CC783C401958F57F00B33F83 /* Raleway-Regular.otf */; };
+		CC783C4A1958F72700B33F83 /* Raleway-SemiBold.otf in Resources */ = {isa = PBXBuildFile; fileRef = CC783C411958F57F00B33F83 /* Raleway-SemiBold.otf */; };
+		CC783C4B1958F72700B33F83 /* Raleway-Thin.otf in Resources */ = {isa = PBXBuildFile; fileRef = CC783C421958F57F00B33F83 /* Raleway-Thin.otf */; };
+		CC783C4F195901F000B33F83 /* UpArrow.png in Resources */ = {isa = PBXBuildFile; fileRef = CC783C4E195901F000B33F83 /* UpArrow.png */; };
+		CC783C511959182100B33F83 /* DownArrow.png in Resources */ = {isa = PBXBuildFile; fileRef = CC783C501959182100B33F83 /* DownArrow.png */; };
+		CC783C53195923AC00B33F83 /* RecordingLabelCircle.png in Resources */ = {isa = PBXBuildFile; fileRef = CC783C52195923AC00B33F83 /* RecordingLabelCircle.png */; };
+		CC8FB013197C3F4F005B546E /* audioTableCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = CC8FB012197C3F4F005B546E /* audioTableCell.xib */; };
+		CC9680A7191477E800AF3D40 /* UIBezierPath+Smoothing.m in Sources */ = {isa = PBXBuildFile; fileRef = CC9680A6191477E800AF3D40 /* UIBezierPath+Smoothing.m */; };
+		CC9C778E1909EDD300468F46 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CC9C778D1909EDD300468F46 /* Foundation.framework */; };
+		CC9C77901909EDD300468F46 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CC9C778F1909EDD300468F46 /* CoreGraphics.framework */; };
+		CC9C77921909EDD300468F46 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CC9C77911909EDD300468F46 /* UIKit.framework */; };
+		CC9C77981909EDD300468F46 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = CC9C77961909EDD300468F46 /* InfoPlist.strings */; };
+		CC9C779A1909EDD300468F46 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = CC9C77991909EDD300468F46 /* main.m */; };
+		CC9C779E1909EDD300468F46 /* OSAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = CC9C779D1909EDD300468F46 /* OSAppDelegate.m */; };
+		CC9C77A11909EDD300468F46 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CC9C779F1909EDD300468F46 /* Main.storyboard */; };
+		CC9C77A61909EDD400468F46 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CC9C77A51909EDD400468F46 /* Images.xcassets */; };
+		CC9C77AD1909EDD400468F46 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CC9C77AC1909EDD400468F46 /* XCTest.framework */; };
+		CC9C77AE1909EDD400468F46 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CC9C778D1909EDD300468F46 /* Foundation.framework */; };
+		CC9C77AF1909EDD400468F46 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CC9C77911909EDD300468F46 /* UIKit.framework */; };
+		CC9C77B71909EDD400468F46 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = CC9C77B51909EDD400468F46 /* InfoPlist.strings */; };
+		CC9C77B91909EDD400468F46 /* odimoTests.m in Sources */ = {isa = PBXBuildFile; fileRef = CC9C77B81909EDD400468F46 /* odimoTests.m */; };
+		CC9C77D01909EFF000468F46 /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CC9C77C71909EFF000468F46 /* AudioToolbox.framework */; };
+		CC9C77D11909EFF000468F46 /* CFNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CC9C77C81909EFF000468F46 /* CFNetwork.framework */; };
+		CC9C77D21909EFF000468F46 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CC9C77C91909EFF000468F46 /* CoreLocation.framework */; };
+		CC9C77D31909EFF000468F46 /* libz.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = CC9C77CA1909EFF000468F46 /* libz.dylib */; };
+		CC9C77D41909EFF000468F46 /* MobileCoreServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CC9C77CB1909EFF000468F46 /* MobileCoreServices.framework */; };
+		CC9C77D51909EFF000468F46 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CC9C77CC1909EFF000468F46 /* QuartzCore.framework */; };
+		CC9C77D61909EFF000468F46 /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CC9C77CD1909EFF000468F46 /* Security.framework */; };
+		CC9C77D71909EFF000468F46 /* StoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CC9C77CE1909EFF000468F46 /* StoreKit.framework */; };
+		CC9C77D81909EFF000468F46 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CC9C77CF1909EFF000468F46 /* SystemConfiguration.framework */; };
+		CC9C77DE1909FA4000468F46 /* OSPrimaryUser.m in Sources */ = {isa = PBXBuildFile; fileRef = CC9C77DD1909FA4000468F46 /* OSPrimaryUser.m */; };
+		CCA4698A190B4C0F002B8213 /* EditProfilePic.jpg in Resources */ = {isa = PBXBuildFile; fileRef = CCA46989190B4C0F002B8213 /* EditProfilePic.jpg */; };
+		CCB81E0719789EAF0048C207 /* OSManagedDocument.m in Sources */ = {isa = PBXBuildFile; fileRef = CCB81E0619789EAF0048C207 /* OSManagedDocument.m */; };
+		CCB81E0F1978C0A20048C207 /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CCB81E0E1978C0A20048C207 /* CoreData.framework */; };
+		CCBC27A21921B98300761569 /* OSTablePlayerController.m in Sources */ = {isa = PBXBuildFile; fileRef = CCBC27A11921B98300761569 /* OSTablePlayerController.m */; };
+		CCC0AC30193803E4009EB7CE /* photo (10).JPG in Resources */ = {isa = PBXBuildFile; fileRef = CCC0AC2F193803E4009EB7CE /* photo (10).JPG */; };
+		CCCD2AE11A3FD5B70073DD17 /* Launch Screen.xib in Resources */ = {isa = PBXBuildFile; fileRef = CCCD2AE01A3FD5B70073DD17 /* Launch Screen.xib */; };
+		CCCEB5EF193105B100D8029B /* begin_record.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = CCCEB5EE193105B100D8029B /* begin_record.mp3 */; };
+		CCD7062819EF66BC004C9CB0 /* BigMic.png in Resources */ = {isa = PBXBuildFile; fileRef = CCD7062719EF66BC004C9CB0 /* BigMic.png */; };
+		CCDF1FFB191E8005003DD9A8 /* OSWaveView.m in Sources */ = {isa = PBXBuildFile; fileRef = CCDF1FFA191E8005003DD9A8 /* OSWaveView.m */; };
+		CCE1C276193FFAC90001954C /* OSDrawWave.m in Sources */ = {isa = PBXBuildFile; fileRef = CCE1C275193FFAC90001954C /* OSDrawWave.m */; };
+		CCF00C6B1957BB4500D80506 /* mic.png in Resources */ = {isa = PBXBuildFile; fileRef = CCF00C6A1957BB4500D80506 /* mic.png */; };
+		CCF0E4681910A475001821C0 /* OSRecordPlayController.mm in Sources */ = {isa = PBXBuildFile; fileRef = CCF0E4671910A475001821C0 /* OSRecordPlayController.mm */; };
+		CCFE342919155B4900666243 /* OSAudioTableCell.m in Sources */ = {isa = PBXBuildFile; fileRef = CCFE342819155B4900666243 /* OSAudioTableCell.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		CC9C77B01909EDD400468F46 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = CC9C77821909EDD300468F46 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = CC9C77891909EDD300468F46;
+			remoteInfo = odimo;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		CC186F35190F5E6600F671AC /* OSHomeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OSHomeViewController.h; sourceTree = "<group>"; };
+		CC186F36190F5E6600F671AC /* OSHomeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OSHomeViewController.m; sourceTree = "<group>"; };
+		CC186F38190F5EF200F671AC /* OSRecordViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OSRecordViewController.h; sourceTree = "<group>"; };
+		CC186F39190F5EF200F671AC /* OSRecordViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OSRecordViewController.m; sourceTree = "<group>"; };
+		CC1FA95E199A640900C3BC6D /* Recording.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Recording.h; sourceTree = "<group>"; };
+		CC1FA95F199A640900C3BC6D /* Recording.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Recording.m; sourceTree = "<group>"; };
+		CC27AB5A19BB6D9C00EE353C /* Novocaine.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Novocaine.m; sourceTree = "<group>"; };
+		CC2E8AC119AECC78000E9137 /* CoreAudio.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreAudio.framework; path = System/Library/Frameworks/CoreAudio.framework; sourceTree = SDKROOT; };
+		CC2E8AC319AECCEB000E9137 /* CoreFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreFoundation.framework; path = System/Library/Frameworks/CoreFoundation.framework; sourceTree = SDKROOT; };
+		CC3AE0E6199937F000BC2487 /* MessageUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MessageUI.framework; path = System/Library/Frameworks/MessageUI.framework; sourceTree = SDKROOT; };
+		CC4201AB19F8A84200DB8CF5 /* Hand-White-Out.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Hand-White-Out.png"; sourceTree = "<group>"; };
+		CC4201AD19F8A85000DB8CF5 /* demoUpArrow.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = demoUpArrow.png; sourceTree = "<group>"; };
+		CC4201AF19F8C4EE00DB8CF5 /* demoDoubleArrowHalf.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = demoDoubleArrowHalf.png; sourceTree = "<group>"; };
+		CC44FE871A3CA5F800DC5B62 /* OSThemeSettings.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OSThemeSettings.h; sourceTree = "<group>"; };
+		CC44FE881A3CA5F800DC5B62 /* OSThemeSettings.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OSThemeSettings.m; sourceTree = "<group>"; };
+		CC478B641959FB1B0019D837 /* emptyArrayBackground.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = emptyArrayBackground.png; sourceTree = "<group>"; };
+		CC478B66195A61F10019D837 /* reelLight.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = reelLight.png; sourceTree = "<group>"; };
+		CC53290F1985D5CE00FEFC9D /* OSCreatePath.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OSCreatePath.h; sourceTree = "<group>"; };
+		CC5329101985D5CE00FEFC9D /* OSCreatePath.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OSCreatePath.m; sourceTree = "<group>"; };
+		CC5329161985DD3800FEFC9D /* Model.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Model.xcdatamodel; sourceTree = "<group>"; };
+		CC59AFB81A226CCB00AFFA78 /* odimio_Circle.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = odimio_Circle.png; sourceTree = "<group>"; };
+		CC6168B2195BB5F300A6A99B /* speakerPause.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = speakerPause.png; sourceTree = "<group>"; };
+		CC6168B4195BB70B00A6A99B /* speakerPlay.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = speakerPlay.png; sourceTree = "<group>"; };
+		CC6E3F1819300763003701BF /* DragIcon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = DragIcon.png; sourceTree = "<group>"; };
+		CC783C3A1958F57F00B33F83 /* Raleway-Bold.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Raleway-Bold.otf"; sourceTree = "<group>"; };
+		CC783C3B1958F57F00B33F83 /* Raleway-ExtraBold.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Raleway-ExtraBold.otf"; sourceTree = "<group>"; };
+		CC783C3C1958F57F00B33F83 /* Raleway-ExtraLight.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Raleway-ExtraLight.otf"; sourceTree = "<group>"; };
+		CC783C3D1958F57F00B33F83 /* Raleway-Heavy.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Raleway-Heavy.otf"; sourceTree = "<group>"; };
+		CC783C3E1958F57F00B33F83 /* Raleway-Light.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Raleway-Light.otf"; sourceTree = "<group>"; };
+		CC783C3F1958F57F00B33F83 /* Raleway-Medium.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Raleway-Medium.otf"; sourceTree = "<group>"; };
+		CC783C401958F57F00B33F83 /* Raleway-Regular.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Raleway-Regular.otf"; sourceTree = "<group>"; };
+		CC783C411958F57F00B33F83 /* Raleway-SemiBold.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Raleway-SemiBold.otf"; sourceTree = "<group>"; };
+		CC783C421958F57F00B33F83 /* Raleway-Thin.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Raleway-Thin.otf"; sourceTree = "<group>"; };
+		CC783C4E195901F000B33F83 /* UpArrow.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = UpArrow.png; sourceTree = "<group>"; };
+		CC783C501959182100B33F83 /* DownArrow.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = DownArrow.png; sourceTree = "<group>"; };
+		CC783C52195923AC00B33F83 /* RecordingLabelCircle.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = RecordingLabelCircle.png; sourceTree = "<group>"; };
+		CC8FB012197C3F4F005B546E /* audioTableCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = audioTableCell.xib; sourceTree = "<group>"; };
+		CC927B8019BB776B0028F630 /* Novocaine.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Novocaine.h; sourceTree = "<group>"; };
+		CC9680A5191477E800AF3D40 /* UIBezierPath+Smoothing.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIBezierPath+Smoothing.h"; sourceTree = "<group>"; };
+		CC9680A6191477E800AF3D40 /* UIBezierPath+Smoothing.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIBezierPath+Smoothing.m"; sourceTree = "<group>"; };
+		CC9C778A1909EDD300468F46 /* odimo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = odimo.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		CC9C778D1909EDD300468F46 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		CC9C778F1909EDD300468F46 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		CC9C77911909EDD300468F46 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		CC9C77951909EDD300468F46 /* odimo-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "odimo-Info.plist"; sourceTree = "<group>"; };
+		CC9C77971909EDD300468F46 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		CC9C77991909EDD300468F46 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		CC9C779B1909EDD300468F46 /* odimo-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "odimo-Prefix.pch"; sourceTree = "<group>"; };
+		CC9C779C1909EDD300468F46 /* OSAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = OSAppDelegate.h; sourceTree = "<group>"; };
+		CC9C779D1909EDD300468F46 /* OSAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = OSAppDelegate.m; sourceTree = "<group>"; };
+		CC9C77A01909EDD300468F46 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		CC9C77A51909EDD400468F46 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		CC9C77AB1909EDD400468F46 /* odimoTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = odimoTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		CC9C77AC1909EDD400468F46 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
+		CC9C77B41909EDD400468F46 /* odimoTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "odimoTests-Info.plist"; sourceTree = "<group>"; };
+		CC9C77B61909EDD400468F46 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		CC9C77B81909EDD400468F46 /* odimoTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = odimoTests.m; sourceTree = "<group>"; };
+		CC9C77C71909EFF000468F46 /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
+		CC9C77C81909EFF000468F46 /* CFNetwork.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CFNetwork.framework; path = System/Library/Frameworks/CFNetwork.framework; sourceTree = SDKROOT; };
+		CC9C77C91909EFF000468F46 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
+		CC9C77CA1909EFF000468F46 /* libz.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libz.dylib; path = usr/lib/libz.dylib; sourceTree = SDKROOT; };
+		CC9C77CB1909EFF000468F46 /* MobileCoreServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MobileCoreServices.framework; path = System/Library/Frameworks/MobileCoreServices.framework; sourceTree = SDKROOT; };
+		CC9C77CC1909EFF000468F46 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		CC9C77CD1909EFF000468F46 /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
+		CC9C77CE1909EFF000468F46 /* StoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = StoreKit.framework; path = System/Library/Frameworks/StoreKit.framework; sourceTree = SDKROOT; };
+		CC9C77CF1909EFF000468F46 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
+		CC9C77DC1909FA4000468F46 /* OSPrimaryUser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OSPrimaryUser.h; sourceTree = "<group>"; };
+		CC9C77DD1909FA4000468F46 /* OSPrimaryUser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OSPrimaryUser.m; sourceTree = "<group>"; };
+		CCA46989190B4C0F002B8213 /* EditProfilePic.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = EditProfilePic.jpg; sourceTree = "<group>"; };
+		CCB81E0519789EAF0048C207 /* OSManagedDocument.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OSManagedDocument.h; sourceTree = "<group>"; };
+		CCB81E0619789EAF0048C207 /* OSManagedDocument.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OSManagedDocument.m; sourceTree = "<group>"; };
+		CCB81E0E1978C0A20048C207 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
+		CCBC27A01921B98300761569 /* OSTablePlayerController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OSTablePlayerController.h; sourceTree = "<group>"; };
+		CCBC27A11921B98300761569 /* OSTablePlayerController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OSTablePlayerController.m; sourceTree = "<group>"; };
+		CCC0AC2F193803E4009EB7CE /* photo (10).JPG */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "photo (10).JPG"; sourceTree = "<group>"; };
+		CCCD2AE01A3FD5B70073DD17 /* Launch Screen.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = "Launch Screen.xib"; sourceTree = "<group>"; };
+		CCCEB5EE193105B100D8029B /* begin_record.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = begin_record.mp3; sourceTree = "<group>"; };
+		CCD7062719EF66BC004C9CB0 /* BigMic.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = BigMic.png; sourceTree = "<group>"; };
+		CCDF1FF9191E8005003DD9A8 /* OSWaveView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OSWaveView.h; sourceTree = "<group>"; };
+		CCDF1FFA191E8005003DD9A8 /* OSWaveView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OSWaveView.m; sourceTree = "<group>"; };
+		CCE1C274193FFAC90001954C /* OSDrawWave.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OSDrawWave.h; sourceTree = "<group>"; };
+		CCE1C275193FFAC90001954C /* OSDrawWave.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OSDrawWave.m; sourceTree = "<group>"; };
+		CCF00C6A1957BB4500D80506 /* mic.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = mic.png; sourceTree = "<group>"; };
+		CCF0E4661910A475001821C0 /* OSRecordPlayController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OSRecordPlayController.h; sourceTree = "<group>"; };
+		CCF0E4671910A475001821C0 /* OSRecordPlayController.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = OSRecordPlayController.mm; sourceTree = "<group>"; };
+		CCFE342719155B4900666243 /* OSAudioTableCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OSAudioTableCell.h; sourceTree = "<group>"; };
+		CCFE342819155B4900666243 /* OSAudioTableCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OSAudioTableCell.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		CC9C77871909EDD300468F46 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CC2E8AC419AECCEB000E9137 /* CoreFoundation.framework in Frameworks */,
+				CC2E8AC219AECC78000E9137 /* CoreAudio.framework in Frameworks */,
+				CC3AE0E7199937F000BC2487 /* MessageUI.framework in Frameworks */,
+				CCB81E0F1978C0A20048C207 /* CoreData.framework in Frameworks */,
+				CC9C77D01909EFF000468F46 /* AudioToolbox.framework in Frameworks */,
+				CC9C77D11909EFF000468F46 /* CFNetwork.framework in Frameworks */,
+				CC9C77D21909EFF000468F46 /* CoreLocation.framework in Frameworks */,
+				CC9C77D31909EFF000468F46 /* libz.dylib in Frameworks */,
+				CC9C77D41909EFF000468F46 /* MobileCoreServices.framework in Frameworks */,
+				CC9C77D51909EFF000468F46 /* QuartzCore.framework in Frameworks */,
+				CC9C77D61909EFF000468F46 /* Security.framework in Frameworks */,
+				CC9C77D71909EFF000468F46 /* StoreKit.framework in Frameworks */,
+				CC9C77D81909EFF000468F46 /* SystemConfiguration.framework in Frameworks */,
+				CC9C77901909EDD300468F46 /* CoreGraphics.framework in Frameworks */,
+				CC9C77921909EDD300468F46 /* UIKit.framework in Frameworks */,
+				CC9C778E1909EDD300468F46 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CC9C77A81909EDD400468F46 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CC9C77AD1909EDD400468F46 /* XCTest.framework in Frameworks */,
+				CC9C77AF1909EDD400468F46 /* UIKit.framework in Frameworks */,
+				CC9C77AE1909EDD400468F46 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		CC2E8AB419AEBC18000E9137 /* Novocaine */ = {
+			isa = PBXGroup;
+			children = (
+				CC27AB5A19BB6D9C00EE353C /* Novocaine.m */,
+				CC927B8019BB776B0028F630 /* Novocaine.h */,
+			);
+			name = Novocaine;
+			sourceTree = "<group>";
+		};
+		CC9C77811909EDD300468F46 = {
+			isa = PBXGroup;
+			children = (
+				CC2E8AB419AEBC18000E9137 /* Novocaine */,
+				CC9C77931909EDD300468F46 /* odimo */,
+				CC9C77B21909EDD400468F46 /* odimoTests */,
+				CC9C778C1909EDD300468F46 /* Frameworks */,
+				CC9C778B1909EDD300468F46 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		CC9C778B1909EDD300468F46 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				CC9C778A1909EDD300468F46 /* odimo.app */,
+				CC9C77AB1909EDD400468F46 /* odimoTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		CC9C778C1909EDD300468F46 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				CC2E8AC319AECCEB000E9137 /* CoreFoundation.framework */,
+				CC2E8AC119AECC78000E9137 /* CoreAudio.framework */,
+				CC3AE0E6199937F000BC2487 /* MessageUI.framework */,
+				CCB81E0E1978C0A20048C207 /* CoreData.framework */,
+				CC9C77C71909EFF000468F46 /* AudioToolbox.framework */,
+				CC9C77C81909EFF000468F46 /* CFNetwork.framework */,
+				CC9C77C91909EFF000468F46 /* CoreLocation.framework */,
+				CC9C77CA1909EFF000468F46 /* libz.dylib */,
+				CC9C77CB1909EFF000468F46 /* MobileCoreServices.framework */,
+				CC9C77CC1909EFF000468F46 /* QuartzCore.framework */,
+				CC9C77CD1909EFF000468F46 /* Security.framework */,
+				CC9C77CE1909EFF000468F46 /* StoreKit.framework */,
+				CC9C77CF1909EFF000468F46 /* SystemConfiguration.framework */,
+				CC9C778D1909EDD300468F46 /* Foundation.framework */,
+				CC9C778F1909EDD300468F46 /* CoreGraphics.framework */,
+				CC9C77911909EDD300468F46 /* UIKit.framework */,
+				CC9C77AC1909EDD400468F46 /* XCTest.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		CC9C77931909EDD300468F46 /* odimo */ = {
+			isa = PBXGroup;
+			children = (
+				CC9C779F1909EDD300468F46 /* Main.storyboard */,
+				CC9C779C1909EDD300468F46 /* OSAppDelegate.h */,
+				CC9C779D1909EDD300468F46 /* OSAppDelegate.m */,
+				CC186F35190F5E6600F671AC /* OSHomeViewController.h */,
+				CC186F36190F5E6600F671AC /* OSHomeViewController.m */,
+				CCBC27A01921B98300761569 /* OSTablePlayerController.h */,
+				CCBC27A11921B98300761569 /* OSTablePlayerController.m */,
+				CCFE342719155B4900666243 /* OSAudioTableCell.h */,
+				CCFE342819155B4900666243 /* OSAudioTableCell.m */,
+				CC186F38190F5EF200F671AC /* OSRecordViewController.h */,
+				CC186F39190F5EF200F671AC /* OSRecordViewController.m */,
+				CCF0E4661910A475001821C0 /* OSRecordPlayController.h */,
+				CCF0E4671910A475001821C0 /* OSRecordPlayController.mm */,
+				CCDF1FF9191E8005003DD9A8 /* OSWaveView.h */,
+				CCDF1FFA191E8005003DD9A8 /* OSWaveView.m */,
+				CC53290F1985D5CE00FEFC9D /* OSCreatePath.h */,
+				CC5329101985D5CE00FEFC9D /* OSCreatePath.m */,
+				CC9680A5191477E800AF3D40 /* UIBezierPath+Smoothing.h */,
+				CC9680A6191477E800AF3D40 /* UIBezierPath+Smoothing.m */,
+				CCE1C274193FFAC90001954C /* OSDrawWave.h */,
+				CCE1C275193FFAC90001954C /* OSDrawWave.m */,
+				CCB81E0519789EAF0048C207 /* OSManagedDocument.h */,
+				CCB81E0619789EAF0048C207 /* OSManagedDocument.m */,
+				CC5329151985DD3800FEFC9D /* Model.xcdatamodeld */,
+				CC1FA95E199A640900C3BC6D /* Recording.h */,
+				CC1FA95F199A640900C3BC6D /* Recording.m */,
+				CC44FE871A3CA5F800DC5B62 /* OSThemeSettings.h */,
+				CC44FE881A3CA5F800DC5B62 /* OSThemeSettings.m */,
+				CC9C77A51909EDD400468F46 /* Images.xcassets */,
+				CCCD2AE01A3FD5B70073DD17 /* Launch Screen.xib */,
+				CC9C77941909EDD300468F46 /* Supporting Files */,
+				CC9C77DC1909FA4000468F46 /* OSPrimaryUser.h */,
+				CC9C77DD1909FA4000468F46 /* OSPrimaryUser.m */,
+				CC8FB012197C3F4F005B546E /* audioTableCell.xib */,
+			);
+			path = odimo;
+			sourceTree = "<group>";
+		};
+		CC9C77941909EDD300468F46 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				CC4201AF19F8C4EE00DB8CF5 /* demoDoubleArrowHalf.png */,
+				CC4201AD19F8A85000DB8CF5 /* demoUpArrow.png */,
+				CC4201AB19F8A84200DB8CF5 /* Hand-White-Out.png */,
+				CC783C3A1958F57F00B33F83 /* Raleway-Bold.otf */,
+				CC783C3B1958F57F00B33F83 /* Raleway-ExtraBold.otf */,
+				CC783C3C1958F57F00B33F83 /* Raleway-ExtraLight.otf */,
+				CC783C3D1958F57F00B33F83 /* Raleway-Heavy.otf */,
+				CC783C3E1958F57F00B33F83 /* Raleway-Light.otf */,
+				CC783C3F1958F57F00B33F83 /* Raleway-Medium.otf */,
+				CC783C401958F57F00B33F83 /* Raleway-Regular.otf */,
+				CC783C411958F57F00B33F83 /* Raleway-SemiBold.otf */,
+				CC783C421958F57F00B33F83 /* Raleway-Thin.otf */,
+				CC478B66195A61F10019D837 /* reelLight.png */,
+				CC6168B4195BB70B00A6A99B /* speakerPlay.png */,
+				CC6168B2195BB5F300A6A99B /* speakerPause.png */,
+				CC478B641959FB1B0019D837 /* emptyArrayBackground.png */,
+				CC783C52195923AC00B33F83 /* RecordingLabelCircle.png */,
+				CC6E3F1819300763003701BF /* DragIcon.png */,
+				CC783C501959182100B33F83 /* DownArrow.png */,
+				CC783C4E195901F000B33F83 /* UpArrow.png */,
+				CCD7062719EF66BC004C9CB0 /* BigMic.png */,
+				CC59AFB81A226CCB00AFFA78 /* odimio_Circle.png */,
+				CCF00C6A1957BB4500D80506 /* mic.png */,
+				CCCEB5EE193105B100D8029B /* begin_record.mp3 */,
+				CCC0AC2F193803E4009EB7CE /* photo (10).JPG */,
+				CCA46989190B4C0F002B8213 /* EditProfilePic.jpg */,
+				CC9C77951909EDD300468F46 /* odimo-Info.plist */,
+				CC9C77961909EDD300468F46 /* InfoPlist.strings */,
+				CC9C77991909EDD300468F46 /* main.m */,
+				CC9C779B1909EDD300468F46 /* odimo-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		CC9C77B21909EDD400468F46 /* odimoTests */ = {
+			isa = PBXGroup;
+			children = (
+				CC9C77B81909EDD400468F46 /* odimoTests.m */,
+				CC9C77B31909EDD400468F46 /* Supporting Files */,
+			);
+			path = odimoTests;
+			sourceTree = "<group>";
+		};
+		CC9C77B31909EDD400468F46 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				CC9C77B41909EDD400468F46 /* odimoTests-Info.plist */,
+				CC9C77B51909EDD400468F46 /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		CC9C77891909EDD300468F46 /* odimo */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CC9C77BC1909EDD400468F46 /* Build configuration list for PBXNativeTarget "odimo" */;
+			buildPhases = (
+				CC9C77861909EDD300468F46 /* Sources */,
+				CC9C77871909EDD300468F46 /* Frameworks */,
+				CC9C77881909EDD300468F46 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = odimo;
+			productName = odimo;
+			productReference = CC9C778A1909EDD300468F46 /* odimo.app */;
+			productType = "com.apple.product-type.application";
+		};
+		CC9C77AA1909EDD400468F46 /* odimoTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CC9C77BF1909EDD400468F46 /* Build configuration list for PBXNativeTarget "odimoTests" */;
+			buildPhases = (
+				CC9C77A71909EDD400468F46 /* Sources */,
+				CC9C77A81909EDD400468F46 /* Frameworks */,
+				CC9C77A91909EDD400468F46 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				CC9C77B11909EDD400468F46 /* PBXTargetDependency */,
+			);
+			name = odimoTests;
+			productName = odimoTests;
+			productReference = CC9C77AB1909EDD400468F46 /* odimoTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		CC9C77821909EDD300468F46 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				CLASSPREFIX = OS;
+				LastUpgradeCheck = 0510;
+				ORGANIZATIONNAME = TransPower;
+				TargetAttributes = {
+					CC9C77891909EDD300468F46 = {
+						DevelopmentTeam = TS6988L22X;
+					};
+					CC9C77AA1909EDD400468F46 = {
+						TestTargetID = CC9C77891909EDD300468F46;
+					};
+				};
+			};
+			buildConfigurationList = CC9C77851909EDD300468F46 /* Build configuration list for PBXProject "odimo" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = CC9C77811909EDD300468F46;
+			productRefGroup = CC9C778B1909EDD300468F46 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				CC9C77891909EDD300468F46 /* odimo */,
+				CC9C77AA1909EDD400468F46 /* odimoTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		CC9C77881909EDD300468F46 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CC783C53195923AC00B33F83 /* RecordingLabelCircle.png in Resources */,
+				CC6168B5195BB70B00A6A99B /* speakerPlay.png in Resources */,
+				CC59AFB91A226CCB00AFFA78 /* odimio_Circle.png in Resources */,
+				CC783C4F195901F000B33F83 /* UpArrow.png in Resources */,
+				CC4201AE19F8A85000DB8CF5 /* demoUpArrow.png in Resources */,
+				CC478B67195A61F10019D837 /* reelLight.png in Resources */,
+				CCF00C6B1957BB4500D80506 /* mic.png in Resources */,
+				CC4201AC19F8A84200DB8CF5 /* Hand-White-Out.png in Resources */,
+				CC8FB013197C3F4F005B546E /* audioTableCell.xib in Resources */,
+				CC783C441958F71E00B33F83 /* Raleway-ExtraBold.otf in Resources */,
+				CC783C4B1958F72700B33F83 /* Raleway-Thin.otf in Resources */,
+				CC783C4A1958F72700B33F83 /* Raleway-SemiBold.otf in Resources */,
+				CC4201B019F8C4EE00DB8CF5 /* demoDoubleArrowHalf.png in Resources */,
+				CC478B651959FB1B0019D837 /* emptyArrayBackground.png in Resources */,
+				CCC0AC30193803E4009EB7CE /* photo (10).JPG in Resources */,
+				CCA4698A190B4C0F002B8213 /* EditProfilePic.jpg in Resources */,
+				CC9C77A61909EDD400468F46 /* Images.xcassets in Resources */,
+				CC6168B3195BB5F300A6A99B /* speakerPause.png in Resources */,
+				CCD7062819EF66BC004C9CB0 /* BigMic.png in Resources */,
+				CC783C461958F72700B33F83 /* Raleway-Heavy.otf in Resources */,
+				CCCEB5EF193105B100D8029B /* begin_record.mp3 in Resources */,
+				CC783C511959182100B33F83 /* DownArrow.png in Resources */,
+				CC783C471958F72700B33F83 /* Raleway-Light.otf in Resources */,
+				CC783C451958F72700B33F83 /* Raleway-ExtraLight.otf in Resources */,
+				CC9C77981909EDD300468F46 /* InfoPlist.strings in Resources */,
+				CC6E3F1919300763003701BF /* DragIcon.png in Resources */,
+				CC783C481958F72700B33F83 /* Raleway-Medium.otf in Resources */,
+				CC783C431958F71800B33F83 /* Raleway-Bold.otf in Resources */,
+				CCCD2AE11A3FD5B70073DD17 /* Launch Screen.xib in Resources */,
+				CC783C491958F72700B33F83 /* Raleway-Regular.otf in Resources */,
+				CC9C77A11909EDD300468F46 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CC9C77A91909EDD400468F46 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CC9C77B71909EDD400468F46 /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		CC9C77861909EDD300468F46 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CC9C779E1909EDD300468F46 /* OSAppDelegate.m in Sources */,
+				CC186F37190F5E6600F671AC /* OSHomeViewController.m in Sources */,
+				CC5329171985DD3800FEFC9D /* Model.xcdatamodeld in Sources */,
+				CCE1C276193FFAC90001954C /* OSDrawWave.m in Sources */,
+				CCF0E4681910A475001821C0 /* OSRecordPlayController.mm in Sources */,
+				CC1FA960199A640900C3BC6D /* Recording.m in Sources */,
+				CC9680A7191477E800AF3D40 /* UIBezierPath+Smoothing.m in Sources */,
+				CCDF1FFB191E8005003DD9A8 /* OSWaveView.m in Sources */,
+				CC27AB5C19BB6D9C00EE353C /* Novocaine.m in Sources */,
+				CCB81E0719789EAF0048C207 /* OSManagedDocument.m in Sources */,
+				CCFE342919155B4900666243 /* OSAudioTableCell.m in Sources */,
+				CC9C779A1909EDD300468F46 /* main.m in Sources */,
+				CC5329111985D5CE00FEFC9D /* OSCreatePath.m in Sources */,
+				CCBC27A21921B98300761569 /* OSTablePlayerController.m in Sources */,
+				CC186F3A190F5EF200F671AC /* OSRecordViewController.m in Sources */,
+				CC9C77DE1909FA4000468F46 /* OSPrimaryUser.m in Sources */,
+				CC44FE891A3CA5F800DC5B62 /* OSThemeSettings.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CC9C77A71909EDD400468F46 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CC9C77B91909EDD400468F46 /* odimoTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		CC9C77B11909EDD400468F46 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = CC9C77891909EDD300468F46 /* odimo */;
+			targetProxy = CC9C77B01909EDD400468F46 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		CC9C77961909EDD300468F46 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				CC9C77971909EDD300468F46 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		CC9C779F1909EDD300468F46 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				CC9C77A01909EDD300468F46 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		CC9C77B51909EDD400468F46 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				CC9C77B61909EDD400468F46 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		CC9C77BA1909EDD400468F46 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: Omid Sharghi (6625NNBG44)";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		CC9C77BB1909EDD400468F46 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: Omid Sharghi (6625NNBG44)";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		CC9C77BD1909EDD400468F46 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					/Users/osharghi/Desktop/iphone/odimo,
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "odimo/odimo-Prefix.pch";
+				INFOPLIST_FILE = "odimo/odimo-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
+				TARGETED_DEVICE_FAMILY = 1;
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		CC9C77BE1909EDD400468F46 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					/Users/osharghi/Desktop/iphone/odimo,
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "odimo/odimo-Prefix.pch";
+				INFOPLIST_FILE = "odimo/odimo-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
+				TARGETED_DEVICE_FAMILY = 1;
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		CC9C77C01909EDD400468F46 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/odimo.app/odimo";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "odimo/odimo-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "odimoTests/odimoTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Debug;
+		};
+		CC9C77C11909EDD400468F46 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/odimo.app/odimo";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "odimo/odimo-Prefix.pch";
+				INFOPLIST_FILE = "odimoTests/odimoTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		CC9C77851909EDD300468F46 /* Build configuration list for PBXProject "odimo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CC9C77BA1909EDD400468F46 /* Debug */,
+				CC9C77BB1909EDD400468F46 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CC9C77BC1909EDD400468F46 /* Build configuration list for PBXNativeTarget "odimo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CC9C77BD1909EDD400468F46 /* Debug */,
+				CC9C77BE1909EDD400468F46 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CC9C77BF1909EDD400468F46 /* Build configuration list for PBXNativeTarget "odimoTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CC9C77C01909EDD400468F46 /* Debug */,
+				CC9C77C11909EDD400468F46 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		CC5329151985DD3800FEFC9D /* Model.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				CC5329161985DD3800FEFC9D /* Model.xcdatamodel */,
+			);
+			currentVersion = CC5329161985DD3800FEFC9D /* Model.xcdatamodel */;
+			path = Model.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = CC9C77821909EDD300468F46 /* Project object */;
+}

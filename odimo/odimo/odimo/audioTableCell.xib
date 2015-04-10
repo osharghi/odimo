@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="6250" systemVersion="13F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6244"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="audioTableCell" id="0wF-iZ-fzp" customClass="OSAudioTableCell">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="127"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="0wF-iZ-fzp" id="uea-a5-Q9S">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="126"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Yam-IN-xwq">
+                        <rect key="frame" x="33" y="4" width="277" height="25"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                        <textInputTraits key="textInputTraits"/>
+                    </textField>
+                    <view contentMode="scaleAspectFit" translatesAutoresizingMaskIntoConstraints="NO" id="Zby-Ni-A7e" customClass="OSWaveView">
+                        <rect key="frame" x="10" y="54" width="300" height="63"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    </view>
+                    <imageView autoresizesSubviews="NO" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="odimio_Circle.png" translatesAutoresizingMaskIntoConstraints="NO" id="tkj-hl-Y2c">
+                        <rect key="frame" x="10" y="7" width="17" height="17"/>
+                        <constraints>
+                            <constraint firstAttribute="width" secondItem="tkj-hl-Y2c" secondAttribute="height" multiplier="1:1" id="dQl-SF-kfb"/>
+                        </constraints>
+                    </imageView>
+                </subviews>
+                <constraints>
+                    <constraint firstAttribute="bottomMargin" secondItem="Yam-IN-xwq" secondAttribute="bottom" constant="89" id="00q-pn-hWc"/>
+                    <constraint firstAttribute="trailingMargin" secondItem="Zby-Ni-A7e" secondAttribute="trailing" constant="2" id="2GS-5H-zZc"/>
+                    <constraint firstAttribute="trailingMargin" secondItem="Yam-IN-xwq" secondAttribute="trailing" constant="2" id="5P7-C2-10E"/>
+                    <constraint firstItem="Zby-Ni-A7e" firstAttribute="leading" secondItem="uea-a5-Q9S" secondAttribute="leadingMargin" constant="2" id="7LR-fr-2MO"/>
+                    <constraint firstAttribute="bottomMargin" secondItem="tkj-hl-Y2c" secondAttribute="bottom" constant="94" id="GMY-eN-FBM"/>
+                    <constraint firstItem="Yam-IN-xwq" firstAttribute="leading" secondItem="tkj-hl-Y2c" secondAttribute="trailing" constant="6" id="Iwb-X5-xDD"/>
+                    <constraint firstItem="tkj-hl-Y2c" firstAttribute="leading" secondItem="uea-a5-Q9S" secondAttribute="leadingMargin" constant="2" id="jlx-1W-pR8"/>
+                    <constraint firstItem="Zby-Ni-A7e" firstAttribute="top" secondItem="uea-a5-Q9S" secondAttribute="topMargin" constant="46" id="m05-vw-VrT"/>
+                    <constraint firstItem="tkj-hl-Y2c" firstAttribute="top" secondItem="uea-a5-Q9S" secondAttribute="topMargin" constant="-1" id="oLP-mE-UTc"/>
+                    <constraint firstItem="Yam-IN-xwq" firstAttribute="top" secondItem="uea-a5-Q9S" secondAttribute="topMargin" constant="-4" id="wXI-bK-y9J"/>
+                    <constraint firstAttribute="bottomMargin" secondItem="Zby-Ni-A7e" secondAttribute="bottom" constant="1" id="z1S-zH-MM6"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="textField" destination="Yam-IN-xwq" id="avs-PN-7Jc"/>
+                <outlet property="trackIcon" destination="tkj-hl-Y2c" id="Zcr-nZ-Kq1"/>
+                <outlet property="waveView" destination="Zby-Ni-A7e" id="znr-dY-nf6"/>
+            </connections>
+            <point key="canvasLocation" x="140" y="149.5"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="odimio_Circle.png" width="500" height="500"/>
+    </resources>
+</document>

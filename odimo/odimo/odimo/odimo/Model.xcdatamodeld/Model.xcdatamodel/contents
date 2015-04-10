@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<model userDefinedModelVersionIdentifier="" type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="3401" systemVersion="13E28" minimumToolsVersion="Xcode 4.3" macOSVersion="Automatic" iOSVersion="Automatic">
+    <entity name="Recording" representedClassName="Recording" syncable="YES">
+        <attribute name="audioURL" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="minAmpl" optional="YES" attributeType="Float" defaultValueString="0.0" syncable="YES"/>
+        <attribute name="recordingNumber" optional="YES" attributeType="Integer 32" defaultValueString="0" syncable="YES"/>
+        <attribute name="timeAdded" optional="YES" attributeType="Date" syncable="YES"/>
+        <attribute name="trackTitle" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="waveData" optional="YES" attributeType="Binary" syncable="YES"/>
+    </entity>
+    <elements>
+        <element name="Recording" positionX="0" positionY="0" width="0" height="0"/>
+    </elements>
+</model>
